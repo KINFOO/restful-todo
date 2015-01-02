@@ -4,7 +4,10 @@
 {% block page_content %}
   <div id="main" class="container">
   {% if todos %}
-    <h2>Todos</h2>
+    <h2>
+      <small><a href="{{ url_for('main.new') }}" class="btn btn-primary">+</a></small>
+      Todos
+    </h2>
     <table class="table table-hover">
       <tr>
         <th>Item
